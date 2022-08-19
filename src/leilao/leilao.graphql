@@ -1,0 +1,24 @@
+type Leilao {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input CreateLeilaoInput {
+  # Example field (placeholder)
+  exampleField: Int
+}
+
+input UpdateLeilaoInput {
+  id: Int!
+}
+
+type Query {
+  leilao: [Leilao]!
+  leilao(id: Int!): Leilao
+}
+
+type Mutation {
+  createLeilao(createLeilaoInput: CreateLeilaoInput!): Leilao!
+  updateLeilao(updateLeilaoInput: UpdateLeilaoInput!): Leilao!
+  removeLeilao(id: Int!): Leilao
+}
